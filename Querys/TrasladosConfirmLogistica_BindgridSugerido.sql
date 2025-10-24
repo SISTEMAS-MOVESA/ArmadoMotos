@@ -1,0 +1,118 @@
+
+SELECT	convert(char,t0.datecreated,103)[FECHA]
+		,T0.ID
+		,T1.ID[LID]
+		,T0.DESTINO [ALMACEN]
+		,T1.RUTA
+		,T0.ESTADO
+		,T0.ESTATUS
+		,T1.ARTICULO
+		,T1.MODELO
+		,T1.DESCRIPCION
+		,T1.ESPACIOS
+		,T1.QTYLOGISTICA [QTYLOG]
+		,T1. QTYSUCURSAL [QTYSUC]
+		,T1.CARDCODE
+		,T1.HEADERID  
+FROM	[ArmadoMotos].[dbo].MACROINSERT_HEADER T0 INNER JOIN MACROINSERT T1 ON T0.ID=T1.HEADERID  
+WHERE	T0.ID = @macroId
+
+
+
+--SELECT	convert(char,t0.datecreated,103)[FECHA]
+--		,T0.ID
+--		,T1.ID[LID]
+--		,T0.ALMDESTINO[ALMACEN]
+--		,T1.RUTA
+--		,CASE T0.OBSERACIONES WHEN 'RESURTIDO' THEN 'RESURTIDO' ELSE 'Presolicitud Directa ' + T0.OBSERACIONES END [OBSERACIONES]
+--		,T0.ESTATUS
+--		,T1.ARTICULO
+--		,T1.MODELO
+--		,T1.DESCRIPCION
+--		,T1.ESPACIOS
+--		,T1.CANTIDAD
+--		,isnull((SELECT top 1 QTYLOGISTICA FROM MACROINSERT WHERE HEADERID=T1.MACROID AND ARTICULO=T1.ARTICULO order by id desc),0)[QTYLOG]
+--		,T0.[CODCLIALMDESTINO]
+--		,T1.MACROID  
+--FROM	[ArmadoMotos].[dbo].[PRESOLICITUD_HEADER] T0 INNER JOIN PRESOLICITUD_LINES T1 ON T0.ID=T1.HEADERID  
+--WHERE T0.ALMDESTINO = 'T' + @almDestino and T1.ALMDESTINO = 'T' + @almDestino and t0.[ESTATUS]='PRESOLICITUD' AND T1.MACROID = @macroId  and t1.ESTADO <>'PROCESADO'
+
+--SELECT	convert(char,t0.datecreated,103)[FECHA]
+--		,T0.ID
+--		,T1.ID[LID]
+--		,T0.ALMDESTINO[ALMACEN]
+--		,T1.RUTA
+--		,CASE T0.OBSERACIONES WHEN 'RESURTIDO' THEN 'RESURTIDO' ELSE 'Presolicitud Directa ' + T0.OBSERACIONES END [OBSERACIONES]
+--		,T0.ESTATUS
+--		,T1.ARTICULO
+--		,T1.MODELO
+--		,T1.DESCRIPCION
+--		,T1.ESPACIOS
+--		,T1.CANTIDAD
+--		,isnull((SELECT top 1 QTYLOGISTICA FROM MACROINSERT WHERE HEADERID=T1.MACROID AND ARTICULO=T1.ARTICULO order by id desc),0)[QTYLOG]
+--		,T0.[CODCLIALMDESTINO]
+--		,T1.MACROID  
+		
+--FROM	[ArmadoMotos].[dbo].[PRESOLICITUD_HEADER] T0 INNER JOIN PRESOLICITUD_LINES T1 ON T0.ID=T1.HEADERID  
+--WHERE T1.MACROID = @macroId  
+
+
+--union all
+
+--SELECT	convert(char,t0.datecreated,103)[FECHA]
+--		,T0.ID
+--		,T1.ID[LID]
+--		,T0.ALMDESTINO collate Modern_Spanish_CI_AS [ALMACEN]
+--		,T1.RUTA collate Modern_Spanish_CI_AS 
+--		,CASE T0.OBSERACIONES WHEN 'RESURTIDO' THEN 'RESURTIDO' ELSE 'Presolicitud Directa ' + T0.OBSERACIONES END collate Modern_Spanish_CI_AS  [OBSERACIONES]
+--		,T0.ESTATUS collate Modern_Spanish_CI_AS 
+--		,T1.ARTICULO collate Modern_Spanish_CI_AS 
+--		,T1.MODELO collate Modern_Spanish_CI_AS 
+--		,T1.DESCRIPCION collate Modern_Spanish_CI_AS 
+--		,T1.ESPACIOS
+--		,T1.CANTIDAD    
+--		,isnull((SELECT top 1 QTYLOGISTICA FROM MACROINSERT WHERE HEADERID=T1.MACROID AND ARTICULO=T1.ARTICULO order by id desc),0)[QTYLOG]
+--		,T0.[CODCLIALMDESTINO] collate Modern_Spanish_CI_AS 
+--		,T1.MACROID    
+--FROM [ArmadoMotos].[dbo].[PRESOLICITUD_HEADER] T0 INNER JOIN PRESOLICITUD_LINES T1 ON T0.ID=T1.HEADERID    
+--WHERE T1.ALMDESTINO = 'T' + @almDestino and t0.[ESTATUS]='PRESOLICITUD' AND T1.MACROID = 0 and t1.ESTATUS='A' 
+
+--union all
+
+--SELECT	convert(char,T0.DocDate,103)
+--		,T0.DocEntry
+--		,t1.LineNum
+--		,t0.ToWhsCode
+--		,t0.JrnlMemo
+--		,t1.U_MSERIE
+--		,'SOLCITUD DE TRASLADO'
+--		,t1.ItemCode
+--		,t1.U_MModelo
+--		,t1.Dscription
+--		,t2.U_Columna
+--		,CONVERT(INT,t1.Quantity)
+--		,0
+--		,t0.CardCode
+--		,T0.DocEntry
+--FROM	movesa..OWTQ T0 WITH(NOLOCK) INNER JOIN movesa..WTQ1 T1 WITH(NOLOCK) ON T0.DocEntry=T1.DOCENTRY inner join movesa..oitm t2 with(nolock) on t1.ItemCode=t2.ItemCode
+--WHERE	T0.DocStatus = 'O' AND t0.docnum=@macroId
+
+--union all
+
+--SELECT	convert(char,t0.datecreated,103)[FECHA]
+--		,T0.ID
+--		,T1.ID[LID]
+--		,T0.ALMDESTINO[ALMACEN]
+--		,T1.RUTA
+--		,CASE T0.OBSERACIONES WHEN 'RESURTIDO' THEN 'RESURTIDO' ELSE 'Presolicitud Directa ' + T0.OBSERACIONES END [OBSERACIONES]
+--		,T0.ESTATUS
+--		,T1.ARTICULO
+--		,T1.MODELO
+--		,T1.DESCRIPCION
+--		,T1.ESPACIOS
+--		,T1.CANTIDAD
+--		,isnull((SELECT top 1 QTYLOGISTICA FROM MACROINSERT WHERE HEADERID=T1.MACROID AND ARTICULO=T1.ARTICULO order by id desc),0)[QTYLOG]
+--		,T0.[CODCLIALMDESTINO]
+--		,T0.ID  
+--FROM	[ArmadoMotos].[dbo].[PRESOLICITUD_HEADER] T0 INNER JOIN PRESOLICITUD_LINES T1 ON T0.ID=T1.HEADERID  
+--WHERE T0.ALMDESTINO = @almDestino and T1.ALMDESTINO = @almDestino and t0.[ESTATUS]='PRESOLICITUD' AND T0.id= @macroId  

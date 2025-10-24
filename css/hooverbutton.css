@@ -1,0 +1,9 @@
+﻿.button
+{
+   background-color: Blue; /*This is your regular color*/
+}
+
+.button:hover
+{
+   background-color: Yellow; /*The color when you pass mouser over it*/
+}
