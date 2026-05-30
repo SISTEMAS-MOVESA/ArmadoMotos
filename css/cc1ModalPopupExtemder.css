@@ -1,0 +1,65 @@
+﻿    body
+        {
+            font-family: Arial;
+            font-size: 10pt;
+        }
+        table
+        {
+            border: 1px solid #ccc;
+        }
+        table th
+        {
+            background-color: #F7F7F7;
+            color: #333;
+            font-weight: bold;
+        }
+        table th, table td
+        {
+            padding: 5px;
+            border-color: #ccc;
+        }
+        .modalBackground
+        {
+            background-color: Black;
+            filter: alpha(opacity=40);
+            opacity: 0.4;
+        }
+        .modalPopup
+        {
+            background-color: #FFFFFF;
+            border: 3px solid #0DA9D0;
+        }
+        .modalPopup .header
+        {
+            background-color: #2FBDF1;
+            height: 40px;
+            color: White;
+            line-height: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .modalPopup .body
+        {
+            min-height: 50px;
+            text-align: center;
+            padding: 5px;
+        }
+        .modalPopup .footer
+        {
+            padding: 3px;
+        }
+        .modalPopup .button
+        {
+            height: 23px;
+            color: White;
+            line-height: 23px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: #9F9F9F;
+            border: 1px solid #5C5C5C;
+        }
+        .modalPopup td
+        {
+            text-align: center;
+        }

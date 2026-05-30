@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\GenerarPO.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\ProcesoContable.aspx.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\ProcesoContable.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\GenerarPO.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcesoContable.aspx.vb",
+              "DocumentMoniker": "\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\ProcesoContable.aspx.vb",
+              "RelativeDocumentMoniker": "ProcesoContable.aspx.vb",
+              "ToolTip": "\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\ProcesoContable.aspx.vb",
+              "RelativeToolTip": "ProcesoContable.aspx.vb",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-02-12T15:20:00.103Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProcesoContable.aspx",
+              "DocumentMoniker": "\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\ProcesoContable.aspx",
+              "RelativeDocumentMoniker": "ProcesoContable.aspx",
+              "ToolTip": "\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\ProcesoContable.aspx",
+              "RelativeToolTip": "ProcesoContable.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-02-12T15:19:52.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GenerarPO.aspx.vb",
+              "DocumentMoniker": "\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\GenerarPO.aspx.vb",
+              "RelativeDocumentMoniker": "GenerarPO.aspx.vb",
+              "ToolTip": "\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\GenerarPO.aspx.vb",
+              "RelativeToolTip": "GenerarPO.aspx.vb",
+              "ViewState": "AgIAAAoBAAAAAAAAAAApwBsBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2026-02-12T15:15:33.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenerarPO.aspx",
+              "DocumentMoniker": "\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\GenerarPO.aspx",
+              "RelativeDocumentMoniker": "GenerarPO.aspx",
+              "ToolTip": "\\\\192.168.1.6\\c$\\inetpub\\wwwroot\\ArmadoMotos\\GenerarPO.aspx",
+              "RelativeToolTip": "GenerarPO.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-02-12T15:15:21.975Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sqlcmd -S localhost -d ArmadoMotos -Q \"SELECT TOP 1 * FROM DESPACHOS_DETALLE_MOTOS\" -W)",
+      "Bash(sqlcmd -S localhost -d ArmadoMotos -Q \"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME='DESPACHOS_DETALLE_MOTOS' ORDER BY ORDINAL_POSITION\" -W)"
+    ]
+  }
+}
