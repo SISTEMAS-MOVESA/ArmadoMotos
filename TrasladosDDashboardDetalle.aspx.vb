@@ -65,7 +65,7 @@ Partial Class TrasladosDDashboardDetalle
                                             " inner Join OCRD t2 on t0.U_CardCode = t2.CardCode" &
                                             " INNER JOIN OSPP T3 ON T3.ItemCode = T1.ItemCode AND T3.CardCode = T2.CardCode" &
                                             " INNER Join OITM T4 ON T4.ItemCode = T1.ItemCode " &
-                                            " LEFT JOIN [@AMODELO] T5 ON T4.U_AMODELO = T5.Code" &
+                                            " LEFT JOIN [@AMODELO] T5 ON T4.U_MODELO = T5.Code" &
                                             " Left Join(SELECT  distinct t1.ItemCode, t0.DocDate, t0.BaseNum, t1.MnfSerial, t1.SysNumber" &
                                             " FROM SRI1  t0 " &
                                             " inner Join OSRN t1 on t0.SysSerial=t1.SysNumber And t0.ItemCode = t1.ItemCode And t0.BaseType = 67" &

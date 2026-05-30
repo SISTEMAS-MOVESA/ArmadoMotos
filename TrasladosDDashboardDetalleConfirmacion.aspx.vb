@@ -155,7 +155,7 @@ Partial Class TrasladosDDashboardDetalleConfirmacion
             Dim sCon As String = sCon2
             Dim sel As String = "INSERT INTO [dbo].[DEPACHOS_HEADER] ([PLANID],[FECHACREACION],[ESTADO],[FECHAINICIO],[FECHAVENCE],[USUARIO]) " &
                             "VALUES (@p1, @p2, @p3, @p4, @p5, @p6); " &
-                            "SELECT SCOPE_IDENTITY();"
+                            "SELECT @@IDENTITY;"
 
             Using con As New SqlConnection(sCon)
                 Dim cmd As New SqlCommand(sel, con)
